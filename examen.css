@@ -1,0 +1,191 @@
+body
+    {
+        font-family: "constantia", Helvetica, sans-serif;
+        font-weight: bold;
+        color: navy;   
+    }
+
+p
+    {
+        margin: 8px;
+        color: navy;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+a
+    {
+        color: navy;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+Form
+    {
+        width: 410px;
+        height: 405px;
+        box-sizing: border-box;
+        border: 4px solid navy;
+        border-radius: 35px 0px 35px 0px;
+        float: left;
+    }
+
+fieldset
+    {
+        width: 380px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-left: 12px;
+        border: 3px solid navy;
+        float: left;
+        color: navy; 
+    }
+
+button
+    {   
+        padding: 10px;
+        color: white;
+        width: 120px;
+        background-color: steelblue;
+        border-radius: 6px;
+        border: 3px solid navy;
+        font-family: "constantia", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin: auto;
+        cursor: pointer;
+    }
+
+button:hover
+    {
+        background-color: navy;
+        border: 3px solid navy;
+        box-shadow: 0 0 10px 0 navy inset, 0 0 10px 4px navy;
+    }
+
+.cargar:hover
+    {
+        background-color: indigo;
+        border: 3px solid blueviolet;
+        box-shadow: 0 0 10px 0 blueviolet inset, 0 0 10px 4px blueviolet;
+    }
+
+.data
+    {   
+        padding: 10px;
+        color: white;
+        width: 200px;
+        background-color: steelblue;
+        border-radius: 6px;
+        border: 3px solid navy;
+       
+        margin: auto;
+        cursor: pointer;
+    }
+
+.data:hover
+    {
+        background-color: green;
+        border: 3px solid limegreen;
+        box-shadow: 0 0 10px 0 limegreen inset, 0 0 10px 4px limegreen;
+    }
+
+.Regresar
+    {   
+        padding: 10px;
+        color: white;
+        width: 160px;
+        background-color: steelblue;
+        border-radius: 6px;
+        border: 3px solid navy;
+       
+        margin: auto;
+        cursor: pointer;
+    }
+
+.Regresar:hover
+    {
+        background-color: magenta;
+        border: 3px solid purple;
+        box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+    }
+
+.danger
+    {   
+        padding: 10px;
+        color: white;
+        width: max-content;
+        background-color: firebrick;
+        border-radius: 6px;
+        border: 3px solid red;
+        font-family: "constantia", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin: auto;
+        cursor: pointer;
+    }
+
+.danger:hover
+    {
+        background-color: firebrick;
+        border: 3px solid red;
+        box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+    }
+.cerrar
+    {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: max-content;
+        padding-right: 10px;
+        float: left;
+        /* border: 4px solid yellow; */
+    }
+
+.Fotos:hover
+    {
+        background-color: gold;
+        border: 3px solid yellow;
+        color: black;
+        box-shadow: 0 0 10px 0 yellow inset, 0 0 10px 4px yellow;
+    }
+
+    :root
+    {
+        --Borde: navy;
+        --Fondo: navy;
+        --Base: steelblue;
+
+        --Bordehover: indigo;
+        --Fondohover: indigo;
+        --Basehover: blueviolet;
+    }
+
+select 
+    {
+        appearance: none;
+        cursor: pointer;
+        font-family: "constantia", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        color: navy;
+        border: 2px solid navy;
+        line-height: 1;
+        padding: 8px 35px;
+        border-radius: 4px;
+        background-color:white;
+        background-image:   linear-gradient(var(--Borde/*Bor*/), var(--Borde/*Bor*/)),
+                            linear-gradient(-135deg, transparent 50%, var(--Base/*Izq*/) 50%),
+                            linear-gradient(-225deg, transparent 50%, var(--Base/*Der*/) 50%),
+                            linear-gradient(var(--Base/*Arr*/) 42%, var(--Fondo/*Fon*/) 42%);
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
+        background-position: right 20px center, right bottom, right bottom, right bottom;   
+    }
+
+select:hover
+    {
+        background-image:   linear-gradient(var(--Bordehover), var(--Bordehover)),
+                            linear-gradient(-135deg, transparent 50%, var(--Basehover) 50%),
+                            linear-gradient(-225deg, transparent 50%, var(--Basehover) 50%),
+                            linear-gradient(var(--Basehover) 42%, var(--Fondohover) 42%);
+    }
